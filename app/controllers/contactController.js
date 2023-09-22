@@ -39,3 +39,21 @@ exports.findAllFavorate = (req, res) => {
         message: "find all favorate handler",
     })
 }
+
+exports.findByID = (req, res) => {
+    res.status(200).json({
+        message: `find contact ${req.params.id} handler`,
+    })
+}   
+
+exports.updateByID = (req, res) => {
+    res.status(200).json({
+        message: `update contact ${req.params.id} handler`,
+    })
+}
+
+exports.deleteById = (req, res) => {
+    res.status(200).json({
+        message: `delete contact ${req.params.id} handler`,
+    })
+}
