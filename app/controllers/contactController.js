@@ -1,4 +1,4 @@
-const ContactService = require("../../services/contact.service.js")
+const ContactService = require("../services/contact.service.js")
 const MongoDB = require("../utils/mongodb.util.js")
 const ApiError = require("../api-error.js")
 
