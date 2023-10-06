@@ -15,12 +15,11 @@ router.route('/:id')
     
 router.route('/favorite')
     .get(contacts.findAllFavorite)
-    .put(contacts.updateByID)
     .delete(contacts.deleteById);
-    
+
 router.route('/favorite/:id')
     .get(contacts.findOne)
-    .post(contacts.update)
+    .patch(contacts.update)
     .delete(contacts.delete);
 
 
